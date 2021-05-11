@@ -5,11 +5,17 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+    background-image: url(images/Gitar.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{color: green;
+font-family:sans-serif;
 }
 
 .music-container{
@@ -86,7 +92,12 @@ body{
 
 .action-btn-big{
     color: #cdc2d0;
+    font-size: 30px;
+}
+
+.action-btn:focus{
     outline: 0;
+    color: black;
 }
 
 .music-info{
@@ -106,7 +117,7 @@ body{
 .music-info h4{
     margin: 0;
 }
-.music-container.music-container.play .music-info{
+.music-container.play .music-info{
     opacity: 1;
     transform: translateY(-100%);
 }
